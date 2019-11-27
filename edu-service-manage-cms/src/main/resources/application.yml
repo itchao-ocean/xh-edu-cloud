@@ -1,0 +1,9 @@
+server:
+  port: 31001
+spring:
+  application:
+    name: edu-service-manage-cms
+  data:
+    mongodb:
+      uri:  mongodb://admin:JINchao891120@111.230.55.238:27017
+      database: edu_cms
