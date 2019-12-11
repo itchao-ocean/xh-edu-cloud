@@ -14,12 +14,20 @@ public enum CmsCode implements ResultCode {
     CMS_GENERATEHTML_TEMPLATEISNULL(false,24004,"页面模板为空！"),
     CMS_GENERATEHTML_HTMLISNULL(false,24005,"生成的静态html为空！"),
     CMS_GENERATEHTML_SAVEHTMLERROR(false,24005,"保存静态html出错！"),
-    CMS_COURSE_PERVIEWISNULL(false,24007,"预览页面为空！");
-    //操作代码
+    CMS_COURSE_PERVIEWISNULL(false,24007,"预览页面为空！"),
+    CMS_QUERY_PAGE_ID_IS_NULL(false,24008,"页面ID为空！"),
+    ;
+    /**
+     * 操作代码
+     */
     boolean success;
-    //操作代码
+    /**
+     * 操作代码
+     */
     int code;
-    //提示信息
+    /**
+     * 提示信息
+     */
     String message;
     private CmsCode(boolean success, int code, String message){
         this.success = success;
